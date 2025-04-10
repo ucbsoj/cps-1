@@ -6,4 +6,4 @@
 <Demo />
 <Footer />
 
-<p>Changes.1!</p>
+<p>Text</p>

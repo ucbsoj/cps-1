@@ -1,9 +1,11 @@
 <script>
-	import Demo from "$components/demo/Demo.svelte";
+	import Hero from "$components/Hero.svelte";
+	import Main from "$components/Main.svelte";
 	import Footer from "$components/Footer.svelte";
 </script>
 
-<Demo />
+<Hero />
+<Main />
 <Footer />
 
 <p>Text testing 123</p>

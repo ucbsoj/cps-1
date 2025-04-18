@@ -1,9 +1,9 @@
 <script>
 	let {
-		title = "Title TK",
-		description = "Description TK",
-		url = "https://pudding.cool",
-		keywords = "",
+		title = "To-Scale: CPS Funding",
+		description = "Government funding intended to provide resources for children separated from their parents by child protective services has created a system where keeping a child in the care of the state means more money for the systems maintaining the separation. ",
+		url = "",
+		keywords = "child welfare, child protective services, funding, government, separation, family, children, parents",
 		preloadFont = []
 	} = $props();
 </script>
@@ -11,11 +11,11 @@
 <svelte:head>
 	<title>{title}</title>
 	<meta name="description" content={description} />
-	<meta name="author" content="The Pudding" />
+	<meta name="author" content="Andres J. Larios" />
 	<meta name="news_keywords" content={keywords} />
 
 	<meta property="og:title" content={title} />
-	<meta property="og:site_name" content="The Pudding" />
+	<meta property="og:site_name" content="To-Scale" />
 	<meta property="og:url" content={url} />
 	<meta property="og:description" content={description} />
 	<meta property="og:type" content="article" />
@@ -32,7 +32,7 @@
 	<meta name="twitter:title" content={title} />
 	<meta name="twitter:description" content={description} />
 	<meta name="twitter:image:src" content="{url}/assets/social-twitter.jpg" />
-
+	<!-- change socials to mine? -->
 	<meta name="robots" content="max-image-preview:large" />
 
 	<link rel="canonical" href="{url}/" />

@@ -12,8 +12,8 @@
 </script>
 
 <Hero
-	hed="This is a placeholder headline"
-	dek="Welcome to this demo"
+	hed="Minahil is awesome"
+	dek="Welcome valued guests"
 	byline="By This Person and That Person"
 	src="/demo/assets/test.jpg"
 	alt="A lake and some clouds"

@@ -1,7 +1,7 @@
 <footer>
 	<p>
-		This is a project by a student at the UC Berkeley Graduate School of
-		Journalism
+		This is multimedia project created by students at the University of
+		California, Berkeley with the assistance of instructor Michelle Pera-McGhee
 	</p>
 </footer>
 

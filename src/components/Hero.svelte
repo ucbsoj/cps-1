@@ -11,7 +11,7 @@
 	*/
 </script>
 
-<Hero
+v<Hero
 	hed="This is a placeholder headline"
 	dek="Welcome to this demo"
 	byline="By This Person and That Person"

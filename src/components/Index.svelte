@@ -1,11 +1,46 @@
 <script>
-	import Hero from "$components/Hero.svelte";
-	import Main from "$components/Main.svelte";
+	// import Hero from "$components/Hero.svelte";
+	// import Main from "$components/Main.svelte";
 	import Footer from "$components/Footer.svelte";
+	import copy from "$data/copy.json";
+	import Landing from "./Landing.svelte";
+	import Meta from "$components/Meta.svelte";
+	// import Trap from "$components/Trap.svelte";
+	import DemoScrolly from "$components/demo/Demo.Scrolly.svelte";
 </script>
 
-<Hero />
-<Main />
-<Footer />
+<div class="content">
+	<Landing />
+	<div class="writing">
+		<p class="family-together">{copy.familytogether}</p>
+		<p class="textcaption">{copy.textcaption}</p>
+		<p class="familytogethercallsign">{copy.familytogethercallsign}</p>
+		<p class="familyseparation">{copy.familyseparation}</p>
+		<p class="child">{copy.child}</p>
+		<p class="childwelfareagencies">{copy.childwelfareagencies}</p>
+	</div>
+	<DemoScrolly />
+</div>
 
-<p>Text testing 123 if i start messing around is this gonna properly show?</p>
+<style>
+	.family-together {
+		font-weight: bold;
+	}
+	.content {
+		background-color: #4a5668;
+		color: #fff;
+		font-family: "Sansita", sans-serif;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		justify-content: center;
+	}
+	.writing {
+		margin-left: 10%;
+		margin-right: 10%;
+		align-items: center;
+		justify-content: center;
+		display: flex;
+		flex-direction: column;
+	}
+</style>

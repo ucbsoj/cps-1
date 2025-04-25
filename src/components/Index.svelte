@@ -1,7 +1,6 @@
 <script>
-	// import Hero from "$components/Hero.svelte";
-	// import Main from "$components/Main.svelte";
 	import Footer from "$components/Footer.svelte";
+	import Decision from "$components/Decision.svelte";
 	import copy from "$data/copy.json";
 	import Landing from "./Landing.svelte";
 	import Meta from "$components/Meta.svelte";
@@ -25,9 +24,25 @@
 	<Phone />
 	<Trap />
 	<DemoScrolly />
+    
+  <article>
+    {#each copy.tree as { type, value, decisionText, choices, outcomes }}
+      {#if type === "text"}
+        <p>{@html value}</p>
+      {:else if type === "decision"}
+        <Decision {decisionText} {choices} {outcomes} />
+      {/if}
+    {/each}
+  </article>
 </div>
+    
 
 <style>
+  article {
+		max-width: 700px;
+		margin: 0 auto;
+  }
+  
 	.family-together {
 		font-weight: bold;
 	}

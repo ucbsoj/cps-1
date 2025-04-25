@@ -1,84 +1,66 @@
 <script>
-	import Hero from "$components/Hero.svelte";
-	import Main from "$components/Main.svelte";
 	import Footer from "$components/Footer.svelte";
 	import Decision from "$components/Decision.svelte";
 	import copy from "$data/copy.json";
-
-	/*
-	const copy = [
-		{
-			type: "text",
-			value: "This is my intro paragraph. This starts out the story."
-		},
-		{
-			type: "decision",
-			decisionText: "Make this first decision.",
-			choices: ["Option 1", "Option 2", "Option 3"],
-			outcomes: [
-				[
-					{
-						type: "text",
-						value: "This is the outcome of choice 1. It ends in a dead end."
-					},
-					{ type: "text", value: "Oh well!" }
-				],
-				[
-					{
-						type: "text",
-						value:
-							"This one has a paragraph followed by another decision to make."
-					},
-					{
-						type: "decision",
-						decisionText: "Make this second decision.",
-						choices: ["Option 1", "Option 2"],
-						outcomes: [
-							[
-								{
-									type: "text",
-									value:
-										"This is the outcome of choice 1. It ends in a dead end."
-								},
-								{ type: "text", value: "Oh well!" }
-							],
-							[
-								{
-									type: "text",
-									value:
-										"This is the outcome of choice 2. It ends in a dead end."
-								},
-								{ type: "text", value: "Oh well!" }
-							]
-						]
-					}
-				],
-				[
-					{
-						type: "text",
-						value: "This is the outcome of choice 3. It ends in a dead end."
-					},
-					{ type: "text", value: "Womp womp." }
-				]
-			]
-		}
-	];
-	*/
+	import Landing from "./Landing.svelte";
+	import Meta from "$components/Meta.svelte";
+	import Trap from "$components/Trap.svelte";
+	import DemoScrolly from "$components/demo/Demo.Scrolly.svelte";
+	import Phone from "./Phone.svelte";
+	import DemoImages from "$components/demo/Demo.Images.svelte";
+	import Demo from "./demo/Demo.Hero.svelte";
 </script>
 
-<article>
-	{#each copy.tree as { type, value, decisionText, choices, outcomes }}
-		{#if type === "text"}
-			<p>{@html value}</p>
-		{:else if type === "decision"}
-			<Decision {decisionText} {choices} {outcomes} />
-		{/if}
-	{/each}
-</article>
+<div class="content">
+	<Landing />
+	<div class="writing">
+		<p class="family-together">{copy.familytogether}</p>
+		<p class="textcaption">{copy.textcaption}</p>
+		<p class="familytogethercallsign">{copy.familytogethercallsign}</p>
+		<p class="familyseparation">{copy.familyseparation}</p>
+		<p class="child">{copy.child}</p>
+		<p class="childwelfareagencies">{copy.childwelfareagencies}</p>
+	</div>
+	<Phone />
+	<Trap />
+	<DemoScrolly />
+    
+  <article>
+    {#each copy.tree as { type, value, decisionText, choices, outcomes }}
+      {#if type === "text"}
+        <p>{@html value}</p>
+      {:else if type === "decision"}
+        <Decision {decisionText} {choices} {outcomes} />
+      {/if}
+    {/each}
+  </article>
+</div>
+    
 
 <style>
-	article {
+  article {
 		max-width: 700px;
 		margin: 0 auto;
+  }
+  
+	.family-together {
+		font-weight: bold;
+	}
+	.content {
+		background-color: #4a5668;
+		color: #fff;
+		font-family: "Sansita", sans-serif;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		justify-content: center;
+	}
+	.writing {
+		margin-left: 10%;
+		margin-right: 10%;
+		align-items: center;
+		justify-content: center;
+		display: flex;
+		flex-direction: column;
 	}
 </style>

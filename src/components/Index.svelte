@@ -5,8 +5,11 @@
 	import copy from "$data/copy.json";
 	import Landing from "./Landing.svelte";
 	import Meta from "$components/Meta.svelte";
-	// import Trap from "$components/Trap.svelte";
+	import Trap from "$components/Trap.svelte";
 	import DemoScrolly from "$components/demo/Demo.Scrolly.svelte";
+	import Phone from "./Phone.svelte";
+	import DemoImages from "$components/demo/Demo.Images.svelte";
+	import Demo from "./demo/Demo.Hero.svelte";
 </script>
 
 <div class="content">
@@ -19,6 +22,8 @@
 		<p class="child">{copy.child}</p>
 		<p class="childwelfareagencies">{copy.childwelfareagencies}</p>
 	</div>
+	<Phone />
+	<Trap />
 	<DemoScrolly />
 </div>
 

@@ -3,7 +3,9 @@
 	import Main from "$components/Main.svelte";
 	import Footer from "$components/Footer.svelte";
 	import Decision from "$components/Decision.svelte";
+	import copy from "$data/copy.json";
 
+	/*
 	const copy = [
 		{
 			type: "text",
@@ -61,10 +63,11 @@
 			]
 		}
 	];
+	*/
 </script>
 
 <article>
-	{#each copy as { type, value, decisionText, choices, outcomes }}
+	{#each copy.tree as { type, value, decisionText, choices, outcomes }}
 		{#if type === "text"}
 			<p>{@html value}</p>
 		{:else if type === "decision"}

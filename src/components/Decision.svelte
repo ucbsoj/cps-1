@@ -44,11 +44,13 @@
 				class:active={activeI === i}
 				style:transform={`rotate(${rotate}deg) translateY(4.5em)`}
 			>
-				{#each outcome as { type, value, decisionText, choices, outcomes }}
+				{#each outcome.outcome as { type, value, decisionText, choices, outcomes, src, alt }}
 					{#if type === "text"}
 						<p>{@html value}</p>
 					{:else if type === "decision"}
 						<Decision {decisionText} {choices} {outcomes} />
+					{:else if type === "img"}
+						<img {src} {alt} />
 					{/if}
 				{/each}
 			</div>

@@ -1,4 +1,6 @@
 <script>
+	import Decision from "$components/Decision.svelte";
+
 	let { decisionText = "", choices = [], outcomes = [] } = $props();
 
 	const wheelWidth = "24rem";
@@ -8,8 +10,6 @@
 	let activeI = $state(undefined);
 	let degrees = $state(choices.length === 3 ? [60, -60, 0] : [60, -60]);
 	let r = $derived(activeI !== undefined ? degrees[activeI] : 0);
-
-	$inspect({ r, activeI });
 
 	const onClick = (i) => {
 		activeI = i;
@@ -44,7 +44,13 @@
 				class:active={activeI === i}
 				style:transform={`rotate(${rotate}deg) translateY(4.5em)`}
 			>
-				<p>{outcome}</p>
+				{#each outcome as { type, value, decisionText, choices, outcomes }}
+					{#if type === "text"}
+						<p>{@html value}</p>
+					{:else if type === "decision"}
+						<Decision {decisionText} {choices} {outcomes} />
+					{/if}
+				{/each}
 			</div>
 		{/each}
 	</div>

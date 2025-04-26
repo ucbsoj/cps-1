@@ -90,7 +90,7 @@
 		margin-right: 10%;
 	}
 	.line {
-		background: rgba(0, 0, 0, 0.05);
+		background: rgba(0, 0, 0, 1);
 		padding: 0;
 	}
 	.line p {

@@ -4,7 +4,7 @@
 
 <div class="landing">
 	<div class="image-container">
-		<img src="/images/new.png" alt="A park with a family" />
+		<img src="./main/new.png" alt="A park with a family" />
 		<!-- <img src="/images/park.png" alt="A park with a bench and trees" />
 	</div>
 	<div class="family">

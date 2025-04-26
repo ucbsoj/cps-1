@@ -15,34 +15,33 @@
 	<Landing />
 	<div class="writing">
 		<p class="family-together">{copy.familytogether}</p>
-		<p class="textcaption">{copy.textcaption}</p>
-		<p class="familytogethercallsign">{copy.familytogethercallsign}</p>
-		<p class="familyseparation">{copy.familyseparation}</p>
+		<!-- <p class="textcaption">{copy.textcaption}</p> -->
+		<!-- <p class="familytogethercallsign">{copy.familytogethercallsign}</p> -->
+		<!-- <p class="familyseparation">{copy.familyseparation}</p>
 		<p class="child">{copy.child}</p>
-		<p class="childwelfareagencies">{copy.childwelfareagencies}</p>
+		<p class="childwelfareagencies">{copy.childwelfareagencies}</p> -->
 	</div>
 	<Phone />
 	<Trap />
 	<DemoScrolly />
-    
-  <article>
-    {#each copy.tree as { type, value, decisionText, choices, outcomes }}
-      {#if type === "text"}
-        <p>{@html value}</p>
-      {:else if type === "decision"}
-        <Decision {decisionText} {choices} {outcomes} />
-      {/if}
-    {/each}
-  </article>
+
+	<article>
+		{#each copy.tree as { type, value, decisionText, choices, outcomes }}
+			{#if type === "text"}
+				<p>{@html value}</p>
+			{:else if type === "decision"}
+				<Decision {decisionText} {choices} {outcomes} />
+			{/if}
+		{/each}
+	</article>
 </div>
-    
 
 <style>
-  article {
+	article {
 		max-width: 700px;
 		margin: 0 auto;
-  }
-  
+	}
+
 	.family-together {
 		font-weight: bold;
 	}

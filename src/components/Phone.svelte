@@ -3,8 +3,8 @@
 </script>
 
 <p class="callsign"></p>
-<p>{copy.callsign}</p>
 <i class="Phone is-animating"></i>
+<p>{copy.callsign}</p>
 
 <style>
 	body {

@@ -9,21 +9,23 @@
 	import Phone from "./Phone.svelte";
 	import DemoImages from "$components/demo/Demo.Images.svelte";
 	import Demo from "./demo/Demo.Hero.svelte";
+	import Intro from "./Intro.svelte";
 </script>
 
 <div class="content">
 	<Landing />
-	<div class="writing">
-		<p class="family-together">{copy.familytogether}</p>
-		<!-- <p class="textcaption">{copy.textcaption}</p> -->
-		<!-- <p class="familytogethercallsign">{copy.familytogethercallsign}</p> -->
-		<!-- <p class="familyseparation">{copy.familyseparation}</p>
+	<Intro />
+	<!-- <div class="writing">
+		<p class="family-together">{copy.familytogether}</p> -->
+	<!-- <p class="textcaption">{copy.textcaption}</p> -->
+	<!-- <p class="familytogethercallsign">{copy.familytogethercallsign}</p> -->
+	<!-- <p class="familyseparation">{copy.familyseparation}</p>
 		<p class="child">{copy.child}</p>
 		<p class="childwelfareagencies">{copy.childwelfareagencies}</p> -->
-	</div>
+	<!-- </div> -->
 	<Phone />
 	<Trap />
-	<DemoScrolly />
+	<Footer />
 
 	<article>
 		{#each copy.tree as { type, value, decisionText, choices, outcomes }}

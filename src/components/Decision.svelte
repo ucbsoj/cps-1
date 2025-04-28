@@ -112,6 +112,7 @@
 		text-align: center;
 		z-index: 10;
 		color: black;
+		width: 250px;
 	}
 
 	button {

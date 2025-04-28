@@ -6,12 +6,15 @@
 	<div class="writing">
 		<p class="preface">{copy.preface}</p>
 		<div class="pic">
-			<img src="/main/house.svg" alt="A house with a family standing inside." />
+			<img
+				src="./main/house.svg"
+				alt="A house with a family standing inside."
+			/>
 		</div>
 		<p class="family-together">{copy.familytogether}</p>
 	</div>
 	<div class="pic">
-		<img src="/main/letters.svg" alt="A teacher playing with a child." />
+		<img src="./main/letters.svg" alt="A teacher playing with a child." />
 	</div>
 	<p class="teacher">
 		{copy.teacher}

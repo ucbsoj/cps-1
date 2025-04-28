@@ -12,6 +12,8 @@
 	import Intro from "./Intro.svelte";
 </script>
 
+<!-- <svelte:body style:background="#4a5668" /> -->
+
 <div class="content">
 	<Landing />
 	<Intro />
@@ -34,6 +36,7 @@
 			{/if}
 		{/each}
 	</article>
+	<Footer />
 </div>
 
 <style>

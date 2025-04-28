@@ -62,9 +62,10 @@
 	.decision {
 		position: relative;
 		margin: 5rem 0;
+		background-color: #4a5668;
 	}
 
-	/* choices */
+	/* choices, the circle */
 
 	.choices {
 		position: relative;
@@ -110,6 +111,7 @@
 		transform: translate(-50%, -50%);
 		text-align: center;
 		z-index: 10;
+		color: black;
 	}
 
 	button {
@@ -125,6 +127,7 @@
 		width: var(--text-width);
 		margin: 0 auto;
 		z-index: 0;
+		background-color: #4a5668;
 	}
 
 	.outcome {
@@ -137,10 +140,12 @@
 		transition: opacity var(--dur) ease-out;
 		opacity: 0.2;
 		filter: blur(4px);
+		background-color: #4a5668;
 	}
 
 	.active {
 		opacity: 1;
 		filter: blur(0);
+		background-color: #4a5668;
 	}
 </style>

@@ -25,8 +25,6 @@
 	<!-- </div> -->
 	<Phone />
 	<Trap />
-	<Footer />
-
 	<article>
 		{#each copy.tree as { type, value, decisionText, choices, outcomes }}
 			{#if type === "text"}
@@ -42,6 +40,7 @@
 	article {
 		max-width: 700px;
 		margin: 0 auto;
+		background-color: #4a5668;
 	}
 
 	.family-together {

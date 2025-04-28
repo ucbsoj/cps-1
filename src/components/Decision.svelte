@@ -111,6 +111,7 @@
 		transform: translate(-50%, -50%);
 		text-align: center;
 		z-index: 10;
+		color: black;
 	}
 
 	button {

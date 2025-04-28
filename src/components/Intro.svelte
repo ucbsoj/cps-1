@@ -10,6 +10,12 @@
 		</div>
 		<p class="family-together">{copy.familytogether}</p>
 	</div>
+	<div class="pic">
+		<img src="/main/letters.svg" alt="A teacher playing with a child." />
+	</div>
+	<p class="teacher">
+		{copy.teacher}
+	</p>
 </div>
 
 <style>
@@ -49,5 +55,17 @@
 		margin-bottom: 1rem;
 		width: 70%;
 		font-style: italic;
+		align-items: center;
+	}
+	.teacher {
+		margin-left: 10%;
+		margin-right: 10%;
+		align-items: center;
+		justify-content: center;
+		display: flex;
+		flex-direction: column;
+	}
+	p {
+		align-items: center;
 	}
 </style>

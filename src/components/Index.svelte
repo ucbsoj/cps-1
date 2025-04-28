@@ -24,7 +24,7 @@
 		<p class="childwelfareagencies">{copy.childwelfareagencies}</p> -->
 	<!-- </div> -->
 	<Phone />
-	<Trap />
+	<!-- <Trap /> -->
 	<article>
 		{#each copy.tree as { type, value, decisionText, choices, outcomes }}
 			{#if type === "text"}

@@ -128,6 +128,10 @@
 		margin: 0 auto;
 		z-index: 0;
 		background-color: #4a5668;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		text-align: center;
 	}
 
 	.outcome {
@@ -139,7 +143,7 @@
 		max-width: var(--text-width);
 		transition: opacity var(--dur) ease-out;
 		opacity: 0.2;
-		filter: blur(4px);
+		filter: blur(6px);
 		background-color: #4a5668;
 	}
 

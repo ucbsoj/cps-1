@@ -11,5 +11,9 @@
 		color: white;
 		padding: 1rem;
 		text-align: center;
+		margin-top: 50%;
+		position: fixed;
+		bottom: 0;
+		width: 100%;
 	}
 </style>

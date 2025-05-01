@@ -1,4 +1,5 @@
 <script>
+	import copy from "$data/copy.json";
 	let {
 		title = "To-Scale: CPS Funding",
 		description = "Government funding intended to provide resources for children separated from their parents by child protective services has created a system where keeping a child in the care of the state means more money for the systems maintaining the separation. ",

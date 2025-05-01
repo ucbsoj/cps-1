@@ -13,9 +13,12 @@
 	import Money from "./Money.svelte";
 </script>
 
+<!-- <svelte:body style:background="#4a5668" /> -->
+
 <div class="content">
 	<Landing />
-	<Intro />
+	<Money/>
+  <Intro />
 	<!-- <div class="writing">
 		<p class="family-together">{copy.familytogether}</p> -->
 	<!-- <p class="textcaption">{copy.textcaption}</p> -->
@@ -25,10 +28,14 @@
 		<p class="childwelfareagencies">{copy.childwelfareagencies}</p> -->
 	<!-- </div> -->
 	<Phone />
-	<Trap />
-	<Money/>
+
+
+	
 	<Footer />
 	
+
+
+	<!-- <Trap /> -->
 
 	<article>
 		{#each copy.tree as { type, value, decisionText, choices, outcomes }}
@@ -39,12 +46,14 @@
 			{/if}
 		{/each}
 	</article>
+	<Footer />
 </div>
 
 <style>
 	article {
 		max-width: 700px;
 		margin: 0 auto;
+		background-color: #4a5668;
 	}
 
 	.family-together {

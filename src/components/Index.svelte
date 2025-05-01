@@ -10,6 +10,7 @@
 	import DemoImages from "$components/demo/Demo.Images.svelte";
 	import Demo from "./demo/Demo.Hero.svelte";
 	import Intro from "./Intro.svelte";
+	import Money from "./Money.svelte";
 </script>
 
 <div class="content">
@@ -25,7 +26,9 @@
 	<!-- </div> -->
 	<Phone />
 	<Trap />
+	<Money/>
 	<Footer />
+	
 
 	<article>
 		{#each copy.tree as { type, value, decisionText, choices, outcomes }}

@@ -193,4 +193,8 @@
 			transform: translate3d(0em, 0, 0);
 		}
 	}
+	p {
+		margin-left: 20%;
+		margin-right: 20%;
+	}
 </style>

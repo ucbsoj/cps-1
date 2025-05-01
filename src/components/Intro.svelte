@@ -44,8 +44,8 @@
 		justify-content: center;
 	}
 	.writing {
-		margin-left: 10%;
-		margin-right: 10%;
+		margin-left: 20%;
+		margin-right: 20%;
 		align-items: center;
 		justify-content: center;
 		display: flex;
@@ -61,8 +61,8 @@
 		align-items: center;
 	}
 	.teacher {
-		margin-left: 10%;
-		margin-right: 10%;
+		margin-left: 20%;
+		margin-right: 20%;
 		align-items: center;
 		justify-content: center;
 		display: flex;
@@ -70,5 +70,12 @@
 	}
 	p {
 		align-items: center;
+	}
+	.family-together {
+		color: #fff;
+		text-align: center;
+		width: 70%;
+		margin-left: 10%;
+		margin-right: 10%;
 	}
 </style>

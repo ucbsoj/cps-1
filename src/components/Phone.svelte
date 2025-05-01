@@ -24,10 +24,10 @@
 		width: 1em;
 		height: 1em;
 		font-size: 25vmin;
-		background-color: #3498db;
+		background-color: #45921f82;
 		border-radius: 0.5em;
 		box-shadow:
-			0 0 0 0em rgba(#3498db, 0),
+			0 0 0 0em rgba(#00000044, 0),
 			0em 0.05em 0.1em rgba(#000000, 0.2);
 		transform: translate3d(0, 0, 0) scale(1);
 	}

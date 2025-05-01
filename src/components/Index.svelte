@@ -10,13 +10,15 @@
 	import DemoImages from "$components/demo/Demo.Images.svelte";
 	import Demo from "./demo/Demo.Hero.svelte";
 	import Intro from "./Intro.svelte";
+	import Money from "./Money.svelte";
 </script>
 
 <!-- <svelte:body style:background="#4a5668" /> -->
 
 <div class="content">
 	<Landing />
-	<Intro />
+	<Money/>
+  <Intro />
 	<!-- <div class="writing">
 		<p class="family-together">{copy.familytogether}</p> -->
 	<!-- <p class="textcaption">{copy.textcaption}</p> -->
@@ -26,7 +28,15 @@
 		<p class="childwelfareagencies">{copy.childwelfareagencies}</p> -->
 	<!-- </div> -->
 	<Phone />
+
+
+	
+	<Footer />
+	
+
+
 	<!-- <Trap /> -->
+
 	<article>
 		{#each copy.tree as { type, value, decisionText, choices, outcomes }}
 			{#if type === "text"}

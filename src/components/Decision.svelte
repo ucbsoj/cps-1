@@ -153,4 +153,15 @@
 		filter: blur(0);
 		background-color: #4a5668;
 	}
+	.outcome img {
+		display: block;
+		margin: auto;
+		margin-top: 100px;
+		scale: 0.5;
+	}
+	.outcome text {
+		display: block;
+		margin: auto;
+		margin-top: 20px;
+	}
 </style>

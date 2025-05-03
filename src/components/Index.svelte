@@ -17,8 +17,8 @@
 
 <div class="content">
 	<Landing />
-	<Money/>
-  <Intro />
+	<Money />
+	<Intro />
 	<!-- <div class="writing">
 		<p class="family-together">{copy.familytogether}</p> -->
 	<!-- <p class="textcaption">{copy.textcaption}</p> -->
@@ -27,13 +27,8 @@
 		<p class="child">{copy.child}</p>
 		<p class="childwelfareagencies">{copy.childwelfareagencies}</p> -->
 	<!-- </div> -->
-	<Phone />
 
-
-	
 	<Footer />
-	
-
 
 	<!-- <Trap /> -->
 

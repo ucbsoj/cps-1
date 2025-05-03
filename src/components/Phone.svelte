@@ -2,9 +2,7 @@
 	import copy from "$data/copy.json";
 </script>
 
-<p class="callsign"></p>
 <i class="Phone is-animating"></i>
-<p>{copy.callsign}</p>
 
 <style>
 	body {

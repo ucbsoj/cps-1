@@ -106,7 +106,7 @@
 		-webkit-text-stroke-color: #000;
 		max-width: 750px;
 		margin-left: 5%;
-		margin-top: 5%;
+		margin-top: 5px;
 		font-size: 48px;
 		font-style: normal;
 		font-weight: 800;

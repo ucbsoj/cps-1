@@ -2,9 +2,13 @@
 	import copy from "$data/copy.json";
 </script>
 
+<h1>So how does this system work?</h1>
 <i class="Phone is-animating"></i>
 
 <style>
+	h1 {
+		margin-top: 200px;
+	}
 	body {
 		display: flex;
 		justify-content: center;
@@ -16,6 +20,7 @@
 	}
 
 	.Phone {
+		margin-top: 20%;
 		position: relative;
 		display: block;
 		margin: 0;

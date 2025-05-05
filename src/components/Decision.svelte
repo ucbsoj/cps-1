@@ -118,6 +118,7 @@
 
 	button {
 		transition: transform var(--dur) ease-out;
+		max-width: 150px;
 	}
 
 	/* outcomes */

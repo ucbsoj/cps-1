@@ -104,6 +104,9 @@
 		color: #fff;
 		-webkit-text-stroke-width: 2px;
 		-webkit-text-stroke-color: #000;
+		max-width: 750px;
+		margin-left: 5%;
+		margin-top: 5%;
 		font-size: 48px;
 		font-style: normal;
 		font-weight: 800;
@@ -120,10 +123,13 @@
 		flex-shrink: 0;
 		-webkit-text-stroke-width: 1px;
 		-webkit-text-stroke-color: #000;
-		font-size: 2rem;
+		font-size: 1.4rem;
 		font-style: normal;
 		font-weight: 600;
+		font-family: Arial, Helvetica, sans-serif;
 		line-height: normal;
+		padding-top: 6%;
+		max-width: 1000px;
 		letter-spacing: 0.36px;
 	}
 
@@ -159,7 +165,7 @@
 	.line.date {
 		font-size: 0.8rem;
 		font-style: italic;
-		color: #648840;
+		color: #54095b;
 		font-weight: 400;
 		line-height: normal;
 		letter-spacing: 0.23px;

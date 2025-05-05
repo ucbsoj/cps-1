@@ -17,9 +17,10 @@
 			<p class="family-together">
 				{copy.familytogether}
 			</p>
-			<p>{copy.un}</p>
-			<p>{copy.hard}</p>
 			<p>{copy.book}</p>
+			<p>{copy.sustain}</p>
+			<p>{copy.un}</p>			
+			
 		</div>
 		<Phone />
 		<div class="text2">
@@ -68,6 +69,7 @@
 	.writing {
 		margin-left: 30%;
 		margin-right: 30%;
+		margin-top: 50px;
 		align-items: center;
 		justify-content: center;
 		display: flex;
@@ -97,8 +99,11 @@
 	.family-together {
 		color: #fff;
 		text-align: center;
-		width: 70%;
-		margin-left: 10%;
-		margin-right: 10%;
+
+	
+	}
+
+	p{
+		margin-top: 30px;
 	}
 </style>

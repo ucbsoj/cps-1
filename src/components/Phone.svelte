@@ -21,7 +21,7 @@
 		margin: 0;
 		width: 1em;
 		height: 1em;
-		font-size: 25vmin;
+		font-size: 20vmin;
 		background-color: #45921f82;
 		border-radius: 0.5em;
 		box-shadow:

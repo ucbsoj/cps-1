@@ -76,6 +76,7 @@
 		margin: 0 auto;
 		transform-origin: 50% 50%;
 		transition: transform var(--dur) ease-out;
+
 	}
 
 	.rotate {
@@ -112,7 +113,7 @@
 		text-align: center;
 		z-index: 10;
 		color: black;
-		width: 250px;
+		width: 130px;
 	}
 
 	button {

@@ -19,8 +19,7 @@
 			</p>
 			<p>{copy.book}</p>
 			<p>{copy.sustain}</p>
-			<p>{copy.un}</p>			
-			
+			<p>{copy.un}</p>
 		</div>
 		<Phone />
 		<div class="text2">
@@ -42,9 +41,16 @@
 	<p class="teacher">
 		{copy.teacher}
 	</p> -->
+	<h1>Let's follow the money.</h1>
 </div>
 
 <style>
+	h1 {
+		margin-top: 200px;
+		color: #fff;
+		text-align: center;
+		font-family: "Sansita", sans-serif;
+	}
 	.pic {
 		display: flex;
 		justify-content: center;
@@ -99,11 +105,9 @@
 	.family-together {
 		color: #fff;
 		text-align: center;
-
-	
 	}
 
-	p{
+	p {
 		margin-top: 30px;
 	}
 </style>

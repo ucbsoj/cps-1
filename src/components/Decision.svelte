@@ -59,6 +59,10 @@
 </div>
 
 <style>
+	h1 {
+		margin-top: 200px;
+		text-align: center;
+	}
 	.decision {
 		position: relative;
 		margin: 5rem 0;
@@ -76,7 +80,6 @@
 		margin: 0 auto;
 		transform-origin: 50% 50%;
 		transition: transform var(--dur) ease-out;
-
 	}
 
 	.rotate {
